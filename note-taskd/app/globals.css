@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #030611;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #030611;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url("./fonts/Fredoka-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./fonts/Outfit-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@theme inline {
+  --font-nunito: var(--font-nunito);
+  --font-fredoka: var(--font-fredoka);
+  --font-outfit: var(--font-outfit);
+  --font-sans: var(--font-nunito-sans);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
